@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>cpe-apigee-html5-wkshp</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <link href="css/codiqa.ext.min.css" rel="stylesheet">
+  <link href="css/jquery.mobile-1.3.1.min.css" rel="stylesheet">
+
+  <script src="js/jquery-1.9.1.min.js"></script>
+  <script src="js/jquery.mobile-1.3.1.min.js"></script>
+  <script src="js/codiqa.ext.min.js"></script>
+  <script src="js/cpe-apigee-html5-wkshp.js"></script>
+</head>
+<body>
+  <div data-role="page" data-control-title="Home" id="page1">
+      <div data-role="panel" id="panel1" data-position="left" data-display="push"
+      data-theme="b">
+          <ul data-role="listview" data-divider-theme="b" data-inset="false">
+              <li data-role="list-divider" role="heading">
+                  Divider
+              </li>
+              <li data-theme="a">
+                  <a href="#page1" data-transition="slide">
+                      Find Near Me
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page2" data-transition="slide">
+                      Find Anywhere
+                  </a>
+              </li>
+          </ul>
+      </div>
+      <div data-theme="a" data-role="header">
+          <a data-role="button" href="#page1" class="ui-btn-right">
+              Add
+          </a>
+          <a data-role="button" href="#page1" data-icon="plus" data-iconpos="left"
+          class="ui-btn-right">
+              Add
+          </a>
+          <a data-role="button" data-inline="false" href="#panel1" data-icon="bars"
+          data-iconpos="notext" class="ui-btn-left nav">
+          </a>
+          <h3 class="content-title">
+              My Restaurants
+          </h3>
+          <div data-role="fieldcontain" data-controltype="searchinput">
+              <input name="" id="search" placeholder="Enter location..." value="" type="search"
+              data-mini="true">
+          </div>
+      </div>
+      <div data-role="content">
+          <ul data-role="listview" data-divider-theme="b" data-inset="true">
+              <li data-theme="c">
+                  <a href="#page3" data-transition="slide">
+                      First Restaurant
+                  </a>
+              </li>
+              <li data-theme="c">
+                  <a href="#page3" data-transition="slide">
+                      Second Restaurant
+                  </a>
+              </li>
+          </ul>
+          <div id="search-results" class="ui-grid-a grid-results">
+              <div class="ui-block-a">
+              </div>
+              <div class="ui-block-b">
+              </div>
+              <div class="ui-block-a">
+              </div>
+              <div class="ui-block-b">
+              </div>
+          </div>
+      </div>
+      <div data-theme="a" data-role="footer" data-position="fixed">
+          <h1 class="content-footer">
+              (C) MyCo
+          </h1>
+      </div>
+  </div>
+  <div data-role="page" data-control-title="FindByLocation" id="page2">
+      <div data-role="content">
+      </div>
+  </div>
+  <div data-role="page" data-control-title="Restaurant" id="page3">
+      <div data-role="content">
+      </div>
+  </div>
+</body>
+</html>
